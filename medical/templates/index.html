@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Home
+{% endblock %}
+
+{% block content%}
+
+    {% load static %}
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="{% static '/images/image1.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="{% static '/images/image2.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+          
+        <div class="carousel-item">
+          <img src="{% static '/images/image3.jpg' %}" class="d-block w-100" alt="...">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<br>
+    <section id="about-section">
+    <h1 style="text-align: center; font-size: 30px; color: #333;">About Us</h1>
+    <hr style="border: 1px solid #333;">
+    <br>
+    <h2 style="font-size: 24px; color: #333;">HDP Hospital Kaipuzha</h2>
+    <p style="font-size: 16px; color: #666;">
+        Healthcare is something that can't be compromised, can it? Hospitals have a huge role to play in developing the
+        healthcare system of any country because, with a growing population, the healthcare demands too are growing and
+        evolving. Providing the highest standard of care for both minor and major health issues, hospitals create a safe
+        space for the patients by offering end-to-end clinical, surgical, and diagnostic services.
+    </p>
+    <p style="font-size: 16px; color: #666;">
+        Hospitals have been making healthcare accessible to one and all and HDP Hospital in Kaipuzha, Kottayam is one such
+        reliable hospital that is committed to providing expert medical care. Having established a firm presence as a
+        trusted name in Hospitals, it is renowned for offering specialized services and treatments.
+    </p>
+    <br>
+    <h2 style="font-size: 24px; color: #333;">Location and Overview</h2>
+    <p style="font-size: 16px; color: #666;">
+        HDP Hospital in Kaipuzha Kottayam is one of the most renowned Hospitals in the area. Countless locals in Kaipuzha
+        have placed immense trust in the practitioner over the years. HDP Hospital is situated at Kaipuzha-686602 which
+        is easily accessible through various modes of transport.
+    </p>
+    <br>
+    <h2 style="font-size: 24px; color: #333;">More Information</h2>
+    <p style="font-size: 16px; color: #666;">
+        HDP Hospital in Kottayam has a supportive and friendly staff, and the latest medical know-how to help patients.
+        The clinic abides by all the necessary safety protocols, including Covid-19 precautionary measures. The doctor
+        and team offer world-class care and guidance, always putting their patients first.
+    </p>
+    <p style="font-size: 16px; color: #666;">
+        If you're planning to visit HDP Hospital in the near future, it's advisable to book an appointment in advance to
+        avoid waiting time. The hours of operation are 00:00-23:59.
+    </p>
+    <br>
+    <br>
+    <br>
+</section>
+
+{% endblock %}
